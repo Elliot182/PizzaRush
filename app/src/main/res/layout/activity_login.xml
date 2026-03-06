@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="0dp">
+
+    <!-- Círculo decorativo superior (efecto glass ambiental) -->
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-80dp"
+        android:background="@drawable/circle_glow_top" />
+
+    <!-- Círculo decorativo inferior -->
+    <View
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-60dp"
+        android:layout_marginStart="-60dp"
+        android:background="@drawable/circle_glow_bottom" />
+
+    <!-- Contenedor principal centrado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingHorizontal="28dp">
+
+        <!-- Logo / Emoji -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="52sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Título principal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PizzaRush"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="0.05"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Subtítulo Login -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Iniciar Sesión"
+            android:textSize="14sp"
+            android:textColor="#B0C4DE"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Tarjeta glass -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_glass"
+            android:padding="24dp"
+            android:elevation="12dp">
+
+            <!-- Label Usuario -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USUARIO"
+                android:textSize="11sp"
+                android:textColor="#B0C4DE"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="6dp"/>
+
+            <!-- Campo Usuario -->
+            <EditText
+                android:id="@+id/etUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="tu nombreapellido"
+                android:textColorHint="#5A6A80"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:background="@drawable/input_glass"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="0dp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="20dp"
+                android:cursorVisible="true"/>
+
+            <!-- Label Contraseña -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTRASEÑA"
+                android:textSize="11sp"
+                android:textColor="#B0C4DE"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="6dp"/>
+
+            <!-- Campo Contraseña -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="••••••••"
+                android:textColorHint="#5A6A80"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:background="@drawable/input_glass"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Botón Ingresar -->
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="INGRESAR"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:letterSpacing="0.15"
+                android:textStyle="bold"
+                android:background="@drawable/btn_primary"
+                android:elevation="6dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

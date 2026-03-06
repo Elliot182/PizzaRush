@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Glow decorativo -->
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginEnd="-80dp"
+        android:background="@drawable/circle_glow_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="52dp"
+        android:paddingBottom="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="38sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nuestro Menú"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="0.03"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Selecciona un platillo"
+            android:textSize="13sp"
+            android:textColor="#B0C4DE"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ListView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/card_glass"
+            android:padding="8dp"
+            android:elevation="10dp">
+
+            <ListView
+                android:id="@+id/lvMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#1AFFFFFF"
+                android:dividerHeight="1dp"
+                android:listSelector="@drawable/list_selector"/>
+
+        </LinearLayout>
+
+        <!-- Botón volver -->
+        <Button
+            android:id="@+id/btnVolverMenu"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="←  VOLVER AL RESUMEN"
+            android:textColor="#B0C4DE"
+            android:textSize="13sp"
+            android:letterSpacing="0.05"
+            android:background="@drawable/btn_secondary"
+            android:layout_marginTop="16dp"
+            android:elevation="4dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
